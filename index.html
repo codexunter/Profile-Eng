@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="cv.css"/>
+  <title>Concise CV</title>
+</head>
+<body onbeforeunload ="reset();">
+  <table id="item1" style="border-collapse: collapse;">
+    <tr> <td><img src="profile.png"/></td> <td>Alexander Poluianov</td> </tr>
+    <tr> <td><img src="home.png"/></td><td>Almetyevsk, Russia</td> </tr>
+    <tr> <td><img src="phone.png"/></td><td>+7(950)-309-94-87</td> </tr>
+    <tr> <td><img src="gmail.svg"/></td><td>postalbox112000@gmail.ru</td> </tr>
+    <tr> <td><img src="github.svg"/></td><td><a href="https://github.com/Coder1382" target="_blank">Link to GitHub</a></td> </tr>
+    <tr>
+      <td><img src="hackerrank.svg"/></td><td><a href="https://www.hackerrank.com/profile/mailbox112000" target="_blank">Link to HackerRank</a></td>
+    </tr>
+  </table>
+  <form id="item2" action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="6029fa72-a5bd-4805-b02c-80fdf99243ab">
+    <label style="font-style: italic;">Contact Form</label>
+    <input class="fm" type="text" name="name" placeholder="имя" maxlength="40" required>
+    <input class="fm" type="email" name="email" placeholder="эл. почта" maxlength="40" required>
+    <textarea class="fm" rows="10" name="message" placeholder="сообщение" required></textarea>
+    <input class="fm" type="submit" name="send" value="отправить"/>
+  </form>
+  <div id="item3">
+    <h3>Overview</h3>
+    <section>
+      After graduation from Kazan Federal University as Geologist, I worked in that profession for a long time,
+      including at a rotational basis at different sites.
+      Meanwhile, I pondered on switching to the information tehcnology industry in view of its ever-increasing importancy.<br>
+      Global changes that entailed a global crisis made it economically inexpedient to work at a rotational basis for that time.
+      Therefore, I focused on frellancing as a translator from English to Russian and vice versa.
+      Initially, that business was a reasonable choice in terms of earnings.<br>
+      However, further changes in global circumstances entailed a steep drop in the demand on that language pair. 
+      Therefore, I vigorously took on learning programming languages. I had been improving my skills by reading relevant books,
+      watching relevant videos in the Inthernet, as well as by coding. 
+      After a while, I decided to join a specialized education institution to increase my chances for get in the IT industry.<br>
+      Thus, since October 2023, I am a student of School 21 driven by Sber. Upon having attained level 10, I decided to major in Java language.
+      On the path to level 10, I had completed all necessary projects in C/C++, including games Teris and Snake with use of Qt library.<br>
+      I have written a REST API app in Java for managing databases, a browser game in JavaScript, two Telegram bot in Python.
+      Besides that, I have written several more projects in C/C++ and Java.
+    </section>
+  </div>
+  <div id="item4">
+    <h3>PET-projects</h3>
+    <section>
+    In the <a href="https://github.com/Coder1382/Browser-Game">Browser Game</a>
+    a triangle subject travels along the screen among square obstacles that move towards it.
+    The control is performed via arrow keys Left/Right/Up/Down; to travel faster, tap a respective arrow key.
+    In the game, there are three levels differing in the rate of appearance of obstacles. In the level 3, obstacles rotate.
+    An example of playing in provided in the <a href="https://github.com/Coder1382/Browser-Game/blob/main/README.md">README.md</a> file.
+    The project is written in JavaScript, HTML. CSS.
+    </section>
+    <section style="margin-top: 2vh;">
+    <a href="https://github.com/Coder1382/REST-API-Java-PostgreSQL-Gradle">REST API application (JDBC, PostgreSQL)</a>
+    implements One-to-Many and Many-toMany relations, as well as processes requests as follows:
+    <ul>
+    <li>show all table records / one table record (GET request with/without parameter)</li>
+    <li>add a table record (POST request)</li>
+    <li>update a table record (PUT request)</li>
+    <li>delete a table record (DELETE request)</li>
+    </ul>
+    There are three table at hand: Fruit, Sellers. Suppliers.
+    A record in the Fruit table includes of two mandatory fields: Name and Price. Each record has a list of sellers.
+    User can update the price, as well as add/remove sellers to/from the list.<br>
+    A record in the Sellers table includes one mandatory field Name, and one optional field Supply.
+    Each record has a list of fruit traded by a seller.
+    User can change a supplier for a certain seller, as well as add/remove fruit to/from the list.<br>
+    A record in the Suppliers table includes one mandatory field Name.
+    Each record has a list of sellers served by such a supplier. User can add/remove sellers to/from the list.<br>
+    Upon adding, editing, removal records in tables, lists associated with respective records get automatically updated/deleted.<br>
+    Examples of making use of this application are provided in the 
+    <a href="https://github.com/Coder1382/REST-API-Java-PostgreSQL-Gradle/blob/master/README.md">README.md</a> file.
+    The project is written in Java.
+    </section>
+    <section style="margin-top: 2vh;">
+      <a style="padding-top: 1vh;" href="https://github.com/Coder1382/REST-API-Java-PostgreSQL-maven-Spring">REST API application (Spring, PostgrSQL)</a>
+      is analogous to the previous project except it is rewritten with use of the Spring framework.
+    </section>
+    <section style="margin-top: 2vh;">
+      The <a style="padding-top: 1vh;" href="https://github.com/Coder1382/ArrayList">ArrayList</a> project id
+      is my implementation of the ArrayList class, with all the main methods attributed to the same class in Java.
+    </section>
+    <section style="margin-top: 2vh;">
+      The <a style="padding-top: 1vh;" href="https://github.com/Coder1382/TCP-Linux-socket">Linux Socket</a> project is
+      a console application for establishing a TCP connection and data exchange between a server and clients.
+      Message sent by a client via the console are dispalyed in the server's console.
+      The server saves such an acquired message in a log-file, and echoes it to the client's console.<br>
+      The server's console requires one input parameter: the port number. The client's console requires an input string comprising three parameter:
+      the client name, port number, and the connection time in seconds.
+      An example of making use of the project is provided in the <a href="https://github.com/Coder1382/REST-API-Java-PostgreSQL-Gradle/blob/master/README.md">README.md</a>.
+      The project is written in C++.
+    </section>
+  </div>
+</body>
+<script>
+  function reset(){
+    document.getElementsByClassName("fm")[0].value="";
+    document.getElementsByClassName("fm")[1].value="";
+    document.getElementsByClassName("fm")[2].value="";
+  }
+</script>
+</html>
