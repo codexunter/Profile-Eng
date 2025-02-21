@@ -29,7 +29,7 @@
     <h3>Overview</h3>
     <section>
       After graduation from Kazan Federal University as Geologist, I worked in that occupation, including at a rotational basis at different sites.
-      Several years later, I became interested in the IT industry due to its ever-increasing importancy.<br>
+      Meanwhile, I became interested in the IT industry due to its ever-increasing importancy.<br>
       Global changes and the consequent global crisis urged me to switch to other fields of business activity. I focused on frellancing as a translator 
 	  from English to Russian and vice versa because it was an appropriate choice in terms of earnings.<br>
       However, I felt a need in further professional development, therefore, I took on learning programming languages. 
@@ -44,46 +44,42 @@
     <h3>PET-projects</h3>
     <section>
     In <a href="https://github.com/Coder1382/Browser-Game">Browser Game</a>
-    a triangle subject travels along the screen among square obstacles that move towards it.
-    The control is performed via arrow keys Left/Right/Up/Down; to travel faster, tap a respective arrow key.
-    In the game, there are three levels differing in the rate of appearance of obstacles. In the level 3, obstacles rotate.
-    You can start playing by following <a href="https://coder1382.github.io/Browser-Game/">the link</a> file.
-    The project is written in JavaScript, HTML. CSS.
+    the player (triangle) travels along the screen among square obstacles that move towards it.
+    The triangle is controlled via Left/Right/Up/Down keys. To speed up, tap a respective arrow key.
+    In the game, there are three levels differing in the generation rate of obstacles. In the level 3, obstacles rotate.
+    You can try and play by <a href="https://coder1382.github.io/Browser-Game/">the link</a>. The project is written in JavaScript, HTML. CSS.
     </section>
     <section style="margin-top: 2vh;">
-    <a href="https://github.com/Coder1382/REST-API-Java-PostgreSQL-JDBC">REST API application</a>
-    implements One-to-Many and Many-toMany relations, as well as processes requests as follows:
+    <a href="https://github.com/Coder1382/REST-API-Java-PostgreSQL-JDBC">REST API app</a> implements One-to-Many and Many-toMany relations as follows:
     <ul>
-    <li>show all table records / one table record (GET request with/without parameter)</li>
+    <li>show one/all table record(s) (GET request with/without parameter)</li>
     <li>add a table record (POST request)</li>
     <li>update a table record (PUT request)</li>
     <li>delete a table record (DELETE request)</li>
     </ul>
-    There are three table at hand: Fruit, Sellers. Suppliers.
-    A record in the Fruit table includes of two mandatory fields: Name and Price. Each record has a list of sellers.
-    User can update the price, as well as add/remove sellers to/from the list.<br>
-    A record in the Sellers table includes one mandatory field Name, and one optional field Supply.
-    Each record has a list of fruit traded by a seller.
-    User can change a supplier for a certain seller, as well as add/remove fruit to/from the list.<br>
-    A record in the Suppliers table includes one mandatory field Name.
+    There are three tables at hand: Fruit, Sellers. Suppliers.
+    A record in the Fruit table has two mandatory fields: Name and Price. Each record has a list of sellers.
+    User can update the price, and add/remove sellers to/from the list.<br>
+    A record in the Sellers table has one mandatory field: Name, and one optional field: Supply. Each record has a list of fruit traded by a seller.
+    User can change a supplier for a certain seller, and add/remove fruit to/from the list.<br>
+    A record in the Suppliers table includes one mandatory field: Name.
     Each record has a list of sellers served by such a supplier. User can add/remove sellers to/from the list.<br>
-    Upon adding, editing, removal records in tables, lists associated with respective records get automatically updated/deleted.<br>
-    Follow <a href="https://coder1382.github.io/REST-API-Java-PostgreSQL-JDBC/">the link</a> to view functionality of this app.
-    The project is written in Java with use of SQL, pPostgreSQL, JDBC
+    Upon adding, editing, removing records in tables, lists associated with them get automatically updated/deleted.<br>
+    Follow <a href="https://coder1382.github.io/REST-API-Java-PostgreSQL-JDBC/">the link</a> to watch video on this app. 
+	The app is written in Java with use of SQL, pPostgreSQL, JDBC
     </section>
     <section style="margin-top: 2vh;">
-      <a style="padding-top: 1vh;" href="https://github.com/Coder1382/REST-API-Java-PostgreSQL-Maven-SpringBoot">REST API application
-        (Java, Spring Boot, PostgrSQL)</a>
+      <a style="padding-top: 1vh;" href="https://github.com/Coder1382/REST-API-Java-PostgreSQL-Maven-SpringBoot">REST API app (Java, Spring Boot, PostgrSQL)</a>
       is analogous to the previous project except it is rewritten with use of the Spring Boot, and its image is placed in Docker Hub.
-      Therefore, unlike the previous project, you do not need such preliminaries as having postgresql service started on your machine, nor
-      explicit use of tomcat for starting the project. You can start the app in two ways:
+      Therefore, unlike the previous project, you do not need such preliminaries as having postgresql service run on your machine, nor
+      explicit use of tomcat for starting the app. You can start the app in two ways:
       <ul>
         <li>deploy the app wholy in your machine from the Master branch </li>
         <li>launch <a href="https://github.com/Coder1382/REST-API-Java-PostgreSQL-maven-Spring/blob/feature/docker-compose.yml">
           docker-compose.yml</a> only from the Feature branch to deploy the app from Docker Hub</li>
       </ul>
-	  Follow <a href="https://coder1382.github.io/REST-API-Java-PostgreSQL-Maven-SpringBoot/">the link</a> to view functionality of this app.
-	The project is written in Java with use of SQL, pPostgreSQL, Spring Boot, Docker.
+	  Follow <a href="https://coder1382.github.io/REST-API-Java-PostgreSQL-Maven-SpringBoot/">the link</a>.
+	The app is written in Java with use of SQL, pPostgreSQL, Spring Boot, Docker.
     </section>
     <section style="margin-top: 2vh;">
       <a style="padding-top: 1vh;" href="https://github.com/Coder1382/ArrayList">ArrayList</a> is
@@ -92,21 +88,32 @@
     <section style="margin-top: 2vh;">
       <a style="padding-top: 1vh;" href="https://github.com/Coder1382/TCP-Linux-socket">Linux Socket</a> is
       a console application for establishing a TCP connection and data exchange between a server and clients.
-      Message sent by a client via the console are dispalyed in the server's console.
-      The server saves such an acquired message in a log-file, and echoes it to the client's console.<br>
-      The server's console requires one input parameter: the port number. The client's console requires an input string comprising three parameter:
+      Messages sent by a client via the console are dispalyed in the server's console.
+      The server saves such a message in a log-file, and echoes it to the client's console.<br>
+      The server's console requires one input parameter: the port number. The client's console requires an input string of three parameter:
       the client name, port number, and the connection time in seconds.
-      An example of making use of the project is provided in the <a href="https://github.com/Coder1382/REST-API-Java-PostgreSQL-Gradle/blob/master/README.md">README.md</a>.
+      Follow <a href="https://github.com/Coder1382/REST-API-Java-PostgreSQL-Gradle/blob/master/README.md">the README.md</a>.
       The project is written in C++.
     </section>
 	<section style="margin-top: 2vh;">
-		<a style="padding-top: 1vh;" href="https://github.com/Coder1382/WEB-App-TeleBot">TeleBot</a> is a Telegram app for ordering food online.
-		Upon tapping the button "Перейти на сайт" in the webApp bot, the user is redirected to the supplement website where he can choose
+		<a style="padding-top: 1vh;" href="https://github.com/Coder1382/WEB-App-TeleBot">TeleBot</a> is an app for ordering food online.
+		Upon tapping the button "Перейти на сайт" in the webApp bot, the user is redirected to the supplement website where to choose
 		some food by tapping the button "В корзину" under each of food images. Every tap increments the number of food pieces in the user's cart.<br>
 		Then the user taps the button "Перейти в оформлению заказа", thereafter the user is asked to fill in a contact form.<br>
-		When done, the user taps the button "Оформить заказ", thereupon the user can see his order data in the webApp bot.
+		When done, the user should tap the button "Оформить заказ", thereupon the user can see the order data in the webApp bot.
 		On the other hand, the operator can also simultaneously see the same data in the control bot.<br>
-		Follow <a href="https://coder1382.github.io/Supplement-to-WEB-App-Telebot/">the link</a> to watch a video about use of this app.
+		Follow <a href="https://coder1382.github.io/Supplement-to-WEB-App-Telebot/">the link</a> to watch a video on this app.
+		The project is written in Python.
+	</section>
+	<section style="margin-top: 2vh;">
+		<a style="padding-top: 1vh;" href="https://github.com/Coder1382/Rogue-Game-Java">Rogue Game</a>. The configuration is as follows.<br>
+		The game comprises 21 level. In each level, there are 9 rooms randomly located. In each room, there are random number of enemies 
+		(vampires, ghosts, ogres, sorcerers) and useful items (gold, food, cures, scrolls, armor: club and sword) randomly located.<br>
+		Player can travel only through randomly generated corridors from room to room; doors are also randomly generated.
+		The aim is to find the portal to another level. The number and durability of enemies grow by level to level.
+		In the screen bottom, there is the line of current characteristics of the player.<br> Each enemy moves by their certain pattern. But once 
+		an enemy gets at a certain distance to the player, it starts to pursue the player, and the enemie's features get displaeyd at the screen bottom<br>
+		Follow <a href="https://drive.google.com/file/d/1-lenlRSYGwQfxPCCLxJW8Og_fv8Bx-ne/view?usp=drive_link">the link</a> to watch a video on this app.
 		The project is written in Python.
 	</section>
   </div>
