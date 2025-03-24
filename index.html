@@ -7,116 +7,106 @@
   <title>Concise CV</title>
 </head>
 <body onbeforeunload ="reset();">
-  <table id="item1" style="border-collapse: collapse;">
-    <tr> <td><img src="profile.png"/></td> <td>Alexander Poluianov</td> </tr>
-    <tr> <td><img src="home.png"/></td><td>Almetyevsk, Russia</td> </tr>
-    <tr> <td><img src="phone.png"/></td><td>+7(950)-309-94-87</td> </tr>
-    <tr> <td><img src="gmail.svg"/></td><td>postalbox112000@gmail.ru</td> </tr>
-    <tr> <td><img src="github.svg"/></td><td><a href="https://github.com/Coder1382" target="_blank">Link to GitHub</a></td> </tr>
-    <tr>
-      <td><img src="hackerrank.svg"/></td><td><a href="https://www.hackerrank.com/profile/mailbox112000" target="_blank">Link to HackerRank</a></td>
-    </tr>
-  </table>
-  <form id="item2" action="https://api.web3forms.com/submit" method="POST">
+  <section id="aside"></br>
+  <img id="foto" src="foto.png"/></br>
+  <table id="contacts" style="border-collapse: collapse;">
+    <tr> <td><img src="phone.png"/></td><td class="td">+7(950)-309-94-87</td> </tr>
+    <tr> <td><img src="email.png"/></td><td class="td">postalbox112000@gmail.ru</td> </tr>
+    <tr> <td><img src="github.svg"/></td><td class="td"><a href="https://github.com/Coder1382" target="_blank">GitHub</a></td> </tr>
+	<tr> <td><img src="teleg.png"/></td><td class="td">@tgwnik</td> </tr>
+	<tr> <td><img src="home.png"/></td><td class="td">Almetyevsk, Russia</td> </tr>
+  </table></br>
+  <p>
+	<h3>Skills</h3>
+	<ul>
+		<li>Java, Spring, Hibernate</li>
+		<li>SQL, Postgres</li>
+		<li>JavaScript, jQuery, React</li>
+		<li>HTML, CSS</li>
+		<li>C/C++</li>
+		<li>Python</li>
+		<li>Object-oriented and functional programming, algorithms etc.</li>
+	</ul>
+  </p></br>
+  <p>
+	<h3>Education</h3>
+	<ul>
+		<li>Programming School Sber 21 patronized by Sberbank</li>
+		<li>Bachelor degree in Geology, Kazan Federal University</li>
+	</ul>
+  </p></br>
+  <form id="form" action="https://api.web3forms.com/submit" method="POST">
     <input type="hidden" name="access_key" value="6029fa72-a5bd-4805-b02c-80fdf99243ab">
-    <label style="font-style: italic;">Contact Form</label>
-    <input class="fm" type="text" name="name" placeholder="имя" maxlength="40" required>
-    <input class="fm" type="email" name="email" placeholder="эл. почта" maxlength="40" required>
-    <textarea class="fm" rows="10" name="message" placeholder="сообщение" required></textarea>
-    <input class="fm" type="submit" name="send" value="отправить"/>
+    <label style="font-style: italic;"><h3>Contact Form</h3></label>
+    <input class="fm" type="text" name="name" placeholder="name" maxlength="40" required>
+    <input class="fm" type="email" name="email" placeholder="email" maxlength="40" required>
+    <textarea class="fm" rows="10" name="message" placeholder="message" required></textarea>
+    <input class="fm" type="submit" name="send" value="send"/>
   </form>
-  <div id="item3">
+  </section></br>
+  <section id="main"></br>
+	<div id="name">
+		<h3>Alexander Poluianov</h3>
+		<h3>Full-stack/Backend/Frontend Developer</h3>
+	</div></br>
+  <div id="summary">
     <h3>Overview</h3>
-    <section>
-      After graduation from Kazan Federal University as Geologist, I worked in that occupation, including at a rotational basis at different sites.
-      Meanwhile, I became interested in the IT industry due to its ever-increasing importancy.<br>
-      Global changes and the consequent global crisis urged me to switch to other fields of business activity. I focused on frellancing as a translator 
-	  from English to Russian and vice versa because it was an appropriate choice in terms of earnings.<br>
-      However, I felt a need in further professional development, therefore, I took on learning programming languages. 
-	  I had been improving my skills via relevant books, relevant videos in the Inthernet, and practicing in coding. <br>
-      Since October 2023, I am a student of School 21 patronized by Sber. Upon attaining the level 10, I decided to major in Java language.
-      I had completed all necessary projects in C/C++, including games Teris and Snake with use of Qt library.
-	  In the Java language I have just completed the Rogue Game project with use of Jcurses library<br>
-      Among others, I have written a REST API app in Java for managing databases, a browser game in JavaScript, three Telegram bots in Python etc.
-    </section>
-  </div>
-  <div id="item4">
+    <p>
+      After graduating from Kazan Federal University, I worked at the oil and gas production sites.</br>
+      But with time, I decided to switch to the IT industry because I was interested in personal development. Therefore, 
+	  I started learning programming languages by reading relevant books, watching relevant videos, and via coding.</br>
+	  Meanwhile, I focused on freelancing as a translator from Eng to Rus and vice versa because it was appropriate in terms of earnings.<br>
+      In October 2023, I joined School 21 launched by Sberbank. Upon attaining the level 10, I decided to major in Java language.</br>
+      I plan on working as a full-stack developer because I am experienced in making use of both frontend and backend tools.
+	</p>
+  </div></br>
+  <div id="pets">
     <h3>PET-projects</h3>
-    <section>
-    In <a href="https://github.com/Coder1382/Browser-Game">Browser Game</a>
-    the player (triangle) travels along the screen among square obstacles that move towards it.
-    The triangle is controlled via Left/Right/Up/Down keys. To speed up, tap a respective arrow key.
-    In the game, there are three levels differing in the generation rate of obstacles. In the level 3, obstacles rotate.
-    You can try and play by <a href="https://coder1382.github.io/Browser-Game/">the link</a>. The project is written in JavaScript, HTML. CSS.
-    </section>
-    <section style="margin-top: 2vh;">
-    <a href="https://github.com/Coder1382/REST-API-Java-PostgreSQL-JDBC">REST API app</a> implements One-to-Many and Many-toMany relations as follows:
-    <ul>
-    <li>show one/all table record(s) (GET request with/without parameter)</li>
-    <li>add a table record (POST request)</li>
-    <li>update a table record (PUT request)</li>
-    <li>delete a table record (DELETE request)</li>
-    </ul>
-    There are three tables at hand: Fruit, Sellers. Suppliers.
-    A record in the Fruit table has two mandatory fields: Name and Price. Each record has a list of sellers.
-    User can update the price, and add/remove sellers to/from the list.<br>
-    A record in the Sellers table has one mandatory field: Name, and one optional field: Supply. Each record has a list of fruit traded by a seller.
-    User can change a supplier for a certain seller, and add/remove fruit to/from the list.<br>
-    A record in the Suppliers table includes one mandatory field: Name.
-    Each record has a list of sellers served by such a supplier. User can add/remove sellers to/from the list.<br>
-    Upon adding, editing, removing records in tables, lists associated with them get automatically updated/deleted.<br>
-    Follow <a href="https://coder1382.github.io/REST-API-Java-PostgreSQL-JDBC/">the link</a> to watch video on this app. 
-	The app is written in Java with use of SQL, pPostgreSQL, JDBC
-    </section>
-    <section style="margin-top: 2vh;">
-      <a style="padding-top: 1vh;" href="https://github.com/Coder1382/REST-API-Java-PostgreSQL-Maven-SpringBoot">REST API app (Java, Spring Boot, PostgrSQL)</a>
-      is analogous to the previous project except it is rewritten with use of the Spring Boot, and its image is placed in Docker Hub.
-      Therefore, unlike the previous project, you do not need such preliminaries as having postgresql service run on your machine, nor
-      explicit use of tomcat for starting the app. You can start the app in two ways:
-      <ul>
-        <li>deploy the app wholy in your machine from the Master branch </li>
-        <li>launch <a href="https://github.com/Coder1382/REST-API-Java-PostgreSQL-maven-Spring/blob/feature/docker-compose.yml">
-          docker-compose.yml</a> only from the Feature branch to deploy the app from Docker Hub</li>
-      </ul>
-	  Follow <a href="https://coder1382.github.io/REST-API-Java-PostgreSQL-Maven-SpringBoot/">the link</a>.
-	The app is written in Java with use of SQL, pPostgreSQL, Spring Boot, Docker.
-    </section>
-    <section style="margin-top: 2vh;">
-      <a style="padding-top: 1vh;" href="https://github.com/Coder1382/ArrayList">ArrayList</a> is
-      is my implementation of the ArrayList class, with all the main methods attributed to the same class in Java.
-    </section>
-    <section style="margin-top: 2vh;">
-      <a style="padding-top: 1vh;" href="https://github.com/Coder1382/TCP-Linux-socket">Linux Socket</a> is
-      a console application for establishing a TCP connection and data exchange between a server and clients.
-      Messages sent by a client via the console are dispalyed in the server's console.
-      The server saves such a message in a log-file, and echoes it to the client's console.<br>
-      The server's console requires one input parameter: the port number. The client's console requires an input string of three parameter:
-      the client name, port number, and the connection time in seconds.
-      Follow <a href="https://github.com/Coder1382/REST-API-Java-PostgreSQL-Gradle/blob/master/README.md">the README.md</a>.
-      The project is written in C++.
-    </section>
-	<section style="margin-top: 2vh;">
-		<a style="padding-top: 1vh;" href="https://github.com/Coder1382/WEB-App-TeleBot">TeleBot</a> is an app for ordering food online.
-		Upon tapping the button "Перейти на сайт" in the webApp bot, the user is redirected to the supplement website where to choose
-		some food by tapping the button "В корзину" under each of food images. Every tap increments the number of food pieces in the user's cart.<br>
-		Then the user taps the button "Перейти в оформлению заказа", thereafter the user is asked to fill in a contact form.<br>
-		When done, the user should tap the button "Оформить заказ", thereupon the user can see the order data in the webApp bot.
-		On the other hand, the operator can also simultaneously see the same data in the control bot.<br>
-		Follow <a href="https://coder1382.github.io/Supplement-to-WEB-App-Telebot/">the link</a> to watch a video on this app.
-		The project is written in Python.
-	</section>
-	<section style="margin-top: 2vh;">
-		<a style="padding-top: 1vh;" href="https://github.com/Coder1382/Rogue-Game-Java">Rogue Game</a>. The configuration is as follows.<br>
-		The game comprises 21 level. In each level, there are 9 rooms randomly located. In each room, there are random number of enemies 
-		(vampires, ghosts, ogres, sorcerers) and useful items (gold, food, cures, scrolls, armor: club and sword) randomly located.<br>
-		Player can travel only through randomly generated corridors from room to room; doors are also randomly generated.
-		The aim is to find the portal to another level. The number and durability of enemies grow by level to level.
-		In the screen bottom, there is the line of current characteristics of the player.<br> Each enemy moves by their certain pattern. But once 
-		an enemy gets at a certain distance to the player, it starts to pursue the player, and the enemie's features get displaeyd at the screen bottom<br>
-		Follow <a href="https://drive.google.com/file/d/1-lenlRSYGwQfxPCCLxJW8Og_fv8Bx-ne/view?usp=drive_link">the link</a> to watch a video on this app.
-		The project is written in Python.
-	</section>
+	<p>
+		<a href="https://github.com/Coder1382/Browser-Game">TicTacToe Game (Java, Spring, SQL, Postgres, JavaScript, HTML, CSS)</a>. 
+		You can play with either machine or your friend remotely in your Browser. 
+		Follow <a href="https://drive.google.com/file/d/1uJ5lPAm5fouwtcCBAYRsJknFINV4XRwo/view?usp=sharing">the link</a> to watch video.  	
+	</p>
+	<p>
+		<a href="https://github.com/Coder1382/Tetris-Snake-Games">Tetris and Snake Games (C/C++, Qt, Makefile)</a>. 
+		Two popular games packaged as a single app.  
+		Follow <a href="https://github.com/user-attachments/assets/27e31b06-c667-4316-9ccc-0452f36a4f78">the link</a> to watch video.  	
+	</p>
+    <p>
+    <a href="https://github.com/Coder1382/Browser-Game">Browser Game (JavaScript, HTML, CSS)</a> 
+	You are to evade obstacles moving towards you. 
+    Follow <a href="https://coder1382.github.io/Browser-Game/">the link</a> to play.
+	</p>
+	<p style="margin-top: 2vh;">
+		<a style="padding-top: 1vh;" href="https://github.com/Coder1382/Rogue-Game-Java">Rogue Game (Java Core)</a>. 
+		Follow <a href="https://drive.google.com/file/d/1-lenlRSYGwQfxPCCLxJW8Og_fv8Bx-ne/view?usp=drive_link">the link</a> to watch the video.
+	</p>
+    <p style="margin-top: 2vh;">
+    <a href="https://github.com/Coder1382/REST-API-Java-PostgreSQL-JDBC">REST API app (Java, JDBC, SQL, Postgres, Tomcat, Postman)</a>
+	One-to-Many and Many-to-Many relations.
+    Follow <a href="https://coder1382.github.io/REST-API-Java-PostgreSQL-JDBC/">the link</a> to watch video. 
+    </p>
+    <p style="margin-top: 2vh;">
+      <a style="padding-top: 1vh;" href="https://github.com/Coder1382/REST-API-Java-PostgreSQL-Maven-SpringBoot">REST API 
+		(Java, Spring, SQL, Postgres, Docker Postman)</a>. 
+      Like previous one, but rewritten with use of Spring Boot, and its image is placed in Docker Hub.
+    </p>
+    <p style="margin-top: 2vh;">
+      <a style="padding-top: 1vh;" href="https://github.com/Coder1382/ArrayList">ArrayList (Java Core)</a>. 
+      My implementation of the ArrayList class.
+	</p>
+    <p style="margin-top: 2vh;">
+      <a style="padding-top: 1vh;" href="https://github.com/Coder1382/TCP-Linux-socket">Linux Socket (C++)</a>
+	  A console app to establish a TCP connection and exchange data between a server and clients. 
+      Please, read <a href="https://github.com/Coder1382/REST-API-Java-PostgreSQL-Gradle/blob/master/README.md">the description</a>.
+	</p>
+	<p style="margin-top: 2vh;">
+		<a style="padding-top: 1vh;" href="https://github.com/Coder1382/WEB-App-TeleBot">TeleBot (Pyhton, JavaScript, Telegram)</a>. 
+		An app for ordering food online.
+		Follow <a href="https://coder1382.github.io/Supplement-to-WEB-App-Telebot/">the link</a> to watch video.
+	</p>
   </div>
+  </section></br>
 </body>
 <script>
   function reset(){
