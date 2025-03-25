@@ -9,7 +9,7 @@ body,html{
 }
 body{
   font-size: 1.2em;
-  font-family: Courier, monospace;
+  font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -22,9 +22,9 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: stretch;
+  row-gap: 2vh;
 }
 #aside{
-	row-gap: .2vh;
 	width: 30vw;
 	align-items: start;
 }
@@ -49,12 +49,12 @@ td{
   text-align: start;
 }
 #foto{
-	width: 10vh;
+	width: 8vw;
 	height: auto;
 }
 img:not(#foto){
-  height: 4vh;
-  width: 4vh;
+  height: auto;
+  width: 3.2vh;
 }
 form{
   display: flex;
@@ -98,6 +98,10 @@ li{
 }
 .td{
 	padding-left: 1vw;
+	vertical-align: middle;
+}
+#pets li{
+	margin-top: 2vh;
 }
 @media only screen and (max-width: 768px){
   body{
@@ -114,12 +118,12 @@ li{
 	align-items: center;
   }
   img:not(#foto){
-    height: 4vw;
-    width: 4vw;
+    height: auto;
+    width: 3.2vw;
   }
   #foto{
-    height: 10vw;
-    width: 10vw;
+    height: auto;
+    width: 8vw;
   }
   input[type=submit]{
     min-width: 20vw;
