@@ -103,6 +103,9 @@ li{
 #pets li{
 	margin-top: 2vh;
 }
+.show{
+	display: none;
+}
 @media only screen and (max-width: 768px){
   body{
     width: 100vw;
@@ -115,30 +118,35 @@ li{
     row-gap: 2.5vh;
   }
   #aside, #main{
-	width: 100vw;
-	align-items: center;
+	width: 90vw;
+	align-items: start;
+	background-color: white;
   }
   img:not(#foto){
     height: auto;
     width: 3.2vw;
   }
-  #foto{
+  #Foto{
     height: auto;
     width: 10vw;
   }
-  input[type=submit]{
-    min-width: 20vw;
-  }
-input:not([type=submit]), textarea{
-  min-width: 80vw;
-}
 td{
   padding: .3vw .8vw;
 }
 #summary, #pets, #{
   width: 90vw;
 }
+#inf{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	width: 70vw;
+}
 .hide{
 	display: none;
+}
+.show{
+	display: block;
 }
 }

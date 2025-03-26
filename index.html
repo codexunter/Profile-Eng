@@ -9,7 +9,9 @@
 </head>
 <body onbeforeunload ="reset();">
   <section id="aside">
-  <img id="foto" src="foto.png"/>
+  <h3 class="show" id="Name">Alexander Poluianov</br>Full-stack/Backend/Frontend Developer</h3>	
+  <div id="inf">	
+  <img class="hide" id="foto" style="height: auto; width: 8vw;" src="foto.png"/>
   <table id="contacts" style="border-collapse: collapse;">
     <tr> <td><img src="phone.png"/></td><td class="td">+7(950)-309-94-87</td> </tr>
     <tr> <td><img src="email.png"/></td><td class="td">postalbox112000@gmail.ru</td> </tr>
@@ -17,6 +19,8 @@
 	<tr> <td><img src="teleg.png"/></td><td class="td">@tgwnik</td> </tr>
 	<tr> <td><img src="home.png"/></td><td class="td">Almetyevsk, Russia</td> </tr>
   </table>
+  <img class="show" id="Foto" style="height: 10vh; width: auto;" src="foto.png"/>
+  </div>
   <ul>
 	<h3>Skills</h3>
 	<li>Java, Spring, Hibernate, SQL, Postgres, Maven/Gradle</li>
@@ -29,7 +33,7 @@
 	<li>Programming School Sber 21 by Sberbank</li>
 	<li>Bachelor degree in Geology, Kazan Federal University</li>
   </ul>
-  <form class="hide" id="form" action="https://api.web3forms.com/submit" method="POST">
+  <form class="hide" class="hide" id="form" action="https://api.web3forms.com/submit" method="POST">
     <input type="hidden" name="access_key" value="6029fa72-a5bd-4805-b02c-80fdf99243ab">
     <h3>Contact Form</h3>
     <input class="fm" type="text" name="name" placeholder="name" maxlength="40" required>
@@ -39,7 +43,7 @@
   </form>
   </section>
   <section id="main">
-	<h3 id="name">Alexander Poluianov</br>Full-stack/Backend/Frontend Developer</h3>
+	<h3 class="hide" id="name">Alexander Poluianov</br>Full-stack/Backend/Frontend Developer</h3>
     <ul id="summary">
 	  <h3>Overview</h3>	
       <li>After graduating from the University, I worked at the oil and gas production sites.</li>
